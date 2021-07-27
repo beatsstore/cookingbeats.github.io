@@ -1,37 +1,29 @@
 <template>
   <div id="app" class="fill flex-shrink-0">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="logo.png" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <img src="logo.png" alt="" width="50px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link class="nav-link" to="#">Sobre</router-link>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="#">Caracteristicas</router-link>
+              <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="#">Blog</router-link>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <router-view />
+    <router-view>
+      
+    </router-view>
   </div>
 </template>
 <script>
@@ -44,7 +36,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(113.96deg, #091358 0%, #40059b 100%);
+  background: #202135;
   color: #fff;
   font-family: "Asap", sans-serif;
 }
